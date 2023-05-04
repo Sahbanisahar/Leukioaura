@@ -1,0 +1,52 @@
+.loginImg{
+    background-image: url("../../assets/images/LogoBackground.png");
+    background-size: 100%;
+}
+.example-full-width{
+  width: 100%;
+}
+.bodyRes{
+    background-image: url("../../assets/images/background1.png");
+    background-size: 125%;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color: red;  
+}
+
+.blockRes{
+    margin: auto;
+    width: 53%;
+    height: 500px;
+    /* animation: wiggle 2s linear infinite; */
+  }
+.sideRes{
+    background-color: #ff6c04;
+}
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }

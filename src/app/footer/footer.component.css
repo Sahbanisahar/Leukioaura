@@ -1,0 +1,16 @@
+.navcolor{
+    background-color: #585454;
+}
+
+a:link:active, a:visited:active {
+  color: orange;
+}
+a:hover{
+  color: orange;
+}
+.homebutton{
+  color: orange;
+}
+a{
+  color: aliceblue;
+}
