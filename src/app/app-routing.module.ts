@@ -6,6 +6,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { FeaturesPageComponent } from './features-page/features-page.component';
 import { PscheduleComponent } from './pschedule/pschedule.component';
+import { EventscheduleComponent } from './eventschedule/eventschedule.component';
 import { PatientsFeatureComponent } from './patients-feature/patients-feature.component';
 import { ExtraOptions } from '@angular/router';
 
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'features', component: FeaturesPageComponent},
   {path: 'pschedule', component: PscheduleComponent},
   {path: 'patients', component: PatientsFeatureComponent},
+  {path: 'eventsc', component: EventscheduleComponent},
 ];
 
 @NgModule({
