@@ -20,6 +20,11 @@ import { FooterComponent } from './footer/footer.component';
 import { FeaturesPageComponent } from './features-page/features-page.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PscheduleComponent } from './pschedule/pschedule.component';
+import { EventscheduleComponent } from './eventschedule/eventschedule.component';
+import { PatientFileComponent } from './patient-file/patient-file.component';
+import { CarouselDynamicComponent } from './carousel-dynamic/carousel-dynamic.component';
+import { PatientsFeatureComponent } from './patients-feature/patients-feature.component';
 
 
 @NgModule({
@@ -36,7 +41,12 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FooterComponent,
     FeaturesPageComponent,
     BlogsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    PscheduleComponent,
+    EventscheduleComponent,
+    PatientFileComponent,
+    CarouselDynamicComponent,
+    PatientsFeatureComponent
   ],
   imports: [
     BrowserModule,
