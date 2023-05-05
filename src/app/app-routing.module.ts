@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
+import { FeaturesPageComponent } from './features-page/features-page.component';
 import { ExtraOptions } from '@angular/router';
 
 const routerOptions: ExtraOptions = {
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardPageComponent},
   {path: 'login', component: LoginPageComponent},
   {path: 'signup', component: SignupPageComponent},
+  {path: 'features', component: FeaturesPageComponent},
 ];
 
 @NgModule({

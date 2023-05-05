@@ -17,6 +17,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { FeaturesPageComponent } from './features-page/features-page.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 @NgModule({
@@ -30,7 +33,10 @@ import { FooterComponent } from './footer/footer.component';
     DashboardPageComponent,
     LoginPageComponent,
     SignupPageComponent,
-    FooterComponent
+    FooterComponent,
+    FeaturesPageComponent,
+    BlogsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
