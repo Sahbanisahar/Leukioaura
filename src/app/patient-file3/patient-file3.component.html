@@ -1,0 +1,19 @@
+<div class="bg-gray-100 p-4 border border-gray-500">
+    <h1 class="font-bold">Notes:</h1>
+    <ul class="list-disc pl-4">
+        <li>The patient has given informed consent for the proposed chemotherapy.</li>
+        <li>The patient has been given instructions on medication administration and the side effects to monitor</li>
+        <li>Recommendations have been given for supportive care, such as using emollients for dry skin and dietary advice to improve appetite.</li>
+        <li>The patient has been informed of possible interactions between chemotherapy medication and other medications they are taking for other health conditions.</li>
+        <li>The patient has been referred to a specialist oncologist for further evaluation of their condition and possible bone marrow transplantation if needed.</li>
+        <li *ngFor="let note of notes">{{ note }}</li>
+    </ul>
+    <div id="ADDNOTE" class="flex items-center text-center m-2" (click)="showInput = true" *ngIf="!showInput">
+        <mat-icon>playlist_add</mat-icon><div class="font-bold">add</div>
+    </div>
+    <div *ngIf="showInput">
+        <input type="text" [(ngModel)]="newNote" placeholder="Type new note here">
+        <button class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-orange-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 rounded" (click)="addNote()">Add</button>
+        <button (click)="showInput = false">Cancel</button>
+    </div>
+</div>

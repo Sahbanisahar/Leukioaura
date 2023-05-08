@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+
 
 @Component({
   selector: 'app-patient-file',
   templateUrl: './patient-file.component.html',
   styleUrls: ['./patient-file.component.css']
-})
-export class PatientFileComponent {
 
+})
+
+export class PatientFileComponent {
+  
 }

@@ -16,13 +16,19 @@
             <div class="flex flex-col items-center">
                 <div *ngIf="router.url === '/patients'" class="headC waviy text-center text-white">
                     <br>
-                    <p>Features > Patients</p>
+                    <p>Features <mat-icon>chevron_right</mat-icon> Patients</p>
                 </div>
             </div>
             <div class="flex flex-col items-center">
                 <div *ngIf="router.url === '/eventsc'" class="headC waviy text-center text-white">
                     <br>
-                    <p>Features > Events Schedule</p>
+                    <p>Features <mat-icon>chevron_right</mat-icon> Events Schedule</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div *ngIf="router.url === '/consDet'" class="headC waviy text-center text-white">
+                    <br>
+                    <p>Features <mat-icon>chevron_right</mat-icon> Consultations <mat-icon>chevron_right</mat-icon> Details</p>
                 </div>
             </div>
         </div>

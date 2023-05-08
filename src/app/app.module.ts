@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +25,10 @@ import { EventscheduleComponent } from './eventschedule/eventschedule.component'
 import { PatientFileComponent } from './patient-file/patient-file.component';
 import { CarouselDynamicComponent } from './carousel-dynamic/carousel-dynamic.component';
 import { PatientsFeatureComponent } from './patients-feature/patients-feature.component';
+import { ConsultationDetailsComponent } from './consultation-details/consultation-details.component';
+import { FormsModule } from '@angular/forms';
+import { PatientFile2Component } from './patient-file2/patient-file2.component';
+import { PatientFile3Component } from './patient-file3/patient-file3.component';
 
 
 @NgModule({
@@ -46,7 +50,10 @@ import { PatientsFeatureComponent } from './patients-feature/patients-feature.co
     EventscheduleComponent,
     PatientFileComponent,
     CarouselDynamicComponent,
-    PatientsFeatureComponent
+    PatientsFeatureComponent,
+    ConsultationDetailsComponent,
+    PatientFile2Component,
+    PatientFile3Component
   ],
   imports: [
     BrowserModule,
@@ -55,9 +62,13 @@ import { PatientsFeatureComponent } from './patients-feature/patients-feature.co
     MatIconModule,
     MatCardModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class AppModule { }

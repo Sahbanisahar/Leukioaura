@@ -1,0 +1,62 @@
+<app-carousel-dynamic></app-carousel-dynamic>
+<div class="bg-gray-200 m-4">
+    <div class="flex mx-auto">
+        <div class="w-1/3 ml-4 mt-2">
+            Patient : Mr Foulen Ben Foulen<br>
+            File number: 15
+        </div>
+        <div class="w-1/3">
+
+        </div>
+        <div class="w-1/3 text-right mr-4 mt-2">
+            Consultation Date: 10/03/2023
+        </div>
+    </div>
+    <hr class="border-b-2 border-gray-400 m-4">
+    <div class="flex flex-col justify-center items-center">
+        <div class="flex">
+            <a routerLink="/consDet" (click)="selectedPage = '1'">
+                <div
+                    class="transition-transform duration-500 transform hover:translate-x-1 flex items-center items-center bg-center m-4">
+                    <p>Page</p>
+                    <mat-icon>looks_one</mat-icon>
+                </div>
+                <hr *ngIf="selectedPage == '1' " class=" border-b-2 border-orange-400">
+            </a>
+            <a routerLink="/consDet" (click)="selectedPage = '2'">
+                <div
+                    class="transition-transform duration-500 transform hover:translate-x-1 flex items-center items-center bg-center m-4">
+                    <p>Page</p>
+                    <mat-icon>looks_two</mat-icon>
+                </div>
+                <hr *ngIf="selectedPage == '2' " class="border-b-2 border-orange-400">
+            </a>
+            <a routerLink="/consDet" (click)="selectedPage = '3'">
+                <div
+                    class="transition-transform duration-500 transform hover:translate-x-1 flex items-center items-center bg-center m-4">
+                    <p>Page</p>
+                    <mat-icon>looks_3</mat-icon>
+                </div>
+                <hr *ngIf="selectedPage == '3' " class="border-b-2 border-orange-400">
+            </a>
+        </div>
+    </div>
+    <div class="bg-white m-8 rounded-lg shadow-2xl">
+        <div *ngIf="selectedPage == '1' ">
+            <app-patient-file></app-patient-file>
+        </div>
+        <div *ngIf="selectedPage == '2' ">
+            <app-patient-file2></app-patient-file2>
+        </div>
+        <div *ngIf="selectedPage == '3' ">
+            <app-patient-file3></app-patient-file3>
+        </div>
+
+    </div>
+
+    <div class="text-right m-8">
+        <button
+            class="ml-auto text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-orange-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Save</button>
+    </div>
+    <p class="text-gray-200">...</p>
+</div>
