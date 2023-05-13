@@ -9,6 +9,11 @@ import { PscheduleComponent } from './pschedule/pschedule.component';
 import { EventscheduleComponent } from './eventschedule/eventschedule.component';
 import { PatientsFeatureComponent } from './patients-feature/patients-feature.component';
 import { ConsultationDetailsComponent } from './consultation-details/consultation-details.component';
+import { DischargePrescriptionsComponent } from './discharge-prescriptions/discharge-prescriptions.component';
+import { DischargePrescriptionsDetailsComponent } from './discharge-prescriptions-details/discharge-prescriptions-details.component';
+import { ConsultationsComponent } from './consultations/consultations.component';
+import { PrescriptionsFeatureComponent } from './prescriptions-feature/prescriptions-feature.component';
+import { PrescriptionsDetailsComponent } from './prescriptions-details/prescriptions-details.component';
 import { ExtraOptions } from '@angular/router';
 
 const routerOptions: ExtraOptions = {
@@ -28,6 +33,11 @@ const routes: Routes = [
   {path: 'patients', component: PatientsFeatureComponent},
   {path: 'eventsc', component: EventscheduleComponent},
   {path: 'consDet', component: ConsultationDetailsComponent},
+  {path: 'dischargePres', component: DischargePrescriptionsComponent},
+  {path: 'dischargePresDet', component: DischargePrescriptionsDetailsComponent},
+  {path: 'consultations', component: ConsultationsComponent},
+  {path: 'prescriptions', component: PrescriptionsFeatureComponent},
+  {path: 'prescriptionsDet', component: PrescriptionsDetailsComponent},
 ];
 
 @NgModule({

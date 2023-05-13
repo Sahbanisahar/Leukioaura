@@ -1,17 +1,9 @@
 .navcolor{
     background-color: #585454;
 }
-  
-  a:link:active, a:visited:active {
-    color: orange;
-  }
   a:hover{
     color: orange;
   }
-  .homebutton{
-    color: orange;
-  }
-
 nav{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

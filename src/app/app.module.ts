@@ -29,6 +29,11 @@ import { ConsultationDetailsComponent } from './consultation-details/consultatio
 import { FormsModule } from '@angular/forms';
 import { PatientFile2Component } from './patient-file2/patient-file2.component';
 import { PatientFile3Component } from './patient-file3/patient-file3.component';
+import { DischargePrescriptionsComponent } from './discharge-prescriptions/discharge-prescriptions.component';
+import { DischargePrescriptionsDetailsComponent } from './discharge-prescriptions-details/discharge-prescriptions-details.component';
+import { ConsultationsComponent } from './consultations/consultations.component';
+import { PrescriptionsFeatureComponent } from './prescriptions-feature/prescriptions-feature.component';
+import { PrescriptionsDetailsComponent } from './prescriptions-details/prescriptions-details.component';
 
 
 @NgModule({
@@ -53,7 +58,12 @@ import { PatientFile3Component } from './patient-file3/patient-file3.component';
     PatientsFeatureComponent,
     ConsultationDetailsComponent,
     PatientFile2Component,
-    PatientFile3Component
+    PatientFile3Component,
+    DischargePrescriptionsComponent,
+    DischargePrescriptionsDetailsComponent,
+    ConsultationsComponent,
+    PrescriptionsFeatureComponent,
+    PrescriptionsDetailsComponent
   ],
   imports: [
     BrowserModule,
