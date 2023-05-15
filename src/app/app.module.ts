@@ -37,6 +37,11 @@ import { CarouselHomeComponent } from './carousel-home/carousel-home.component';
 import { AddPatientComponent } from './Doctor/add-patient/add-patient.component';
 import { PatientViewComponent } from './Doctor/patient-view/patient-view.component';
 import { LabInterfaceComponent } from './Laboratory/lab-interface/lab-interface.component';
+import { TestRequestComponent } from './test-request/test-request.component';
+import { ChatComponent } from './chat/chat.component';
+import { TotalStuffComponent } from './total-stuff/total-stuff.component';
+import { TreatmentsComponent } from './treatments/treatments.component';
+import { NewHosPatientComponent } from './new-hos-patient/new-hos-patient.component';
 
 
 @NgModule({
@@ -69,7 +74,12 @@ import { LabInterfaceComponent } from './Laboratory/lab-interface/lab-interface.
     CarouselHomeComponent,
     AddPatientComponent,
     PatientViewComponent,
-    LabInterfaceComponent
+    LabInterfaceComponent,
+    TestRequestComponent,
+    ChatComponent,
+    TotalStuffComponent,
+    TreatmentsComponent,
+    NewHosPatientComponent
   ],
   imports: [
     BrowserModule,

@@ -17,7 +17,11 @@ import { PrescriptionsDetailsComponent } from './Features/PrescriptionsFeature/p
 import { AddPatientComponent } from './Doctor/add-patient/add-patient.component';
 import { PatientViewComponent } from './Doctor/patient-view/patient-view.component';
 import { LabInterfaceComponent } from './Laboratory/lab-interface/lab-interface.component';
+import { ChatComponent } from './chat/chat.component';
 import { ExtraOptions } from '@angular/router';
+import { TotalStuffComponent } from './total-stuff/total-stuff.component';
+import { TreatmentsComponent } from './treatments/treatments.component';
+import { NewHosPatientComponent } from './new-hos-patient/new-hos-patient.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -44,6 +48,11 @@ const routes: Routes = [
   {path: 'addPatient', component: AddPatientComponent},
   {path: 'patientView', component: PatientViewComponent},
   {path: 'lab', component: LabInterfaceComponent},
+  {path: 'chat', component: ChatComponent},
+  {path: 'totalstuff', component: TotalStuffComponent},
+  {path: 'treatments', component: TreatmentsComponent},
+  {path: 'hospatient', component: NewHosPatientComponent},
+  
 ];
 
 @NgModule({
