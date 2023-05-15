@@ -1,0 +1,116 @@
+<aside id="logo-sidebar"
+   class="transition duration-500 ease-in-out transform hover:translate-y-10 bgcolor fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+   aria-label="Sidebar">
+   <div class="bgcolor h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
+      <ul class=" space-y-2 font-medium">
+         <li>
+            <a routerLink="/dashboard"
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-700 dark:hover:bg-gray-700">
+               <img src="../../../assets/images/Backarrow.png" width="4%">
+               <span class="ml-3">Back</span>
+            </a>
+         </li>
+         <li *ngIf="currentPageLab == '2'">
+            <a (click)="currentPageLab = '1' "
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-700 dark:hover:bg-gray-700">
+               <img src="../../../assets/images/Test.png" width="8%">
+               <span class="flex-1 ml-3 whitespace-nowrap">Requested Tests</span>
+            </a>
+         </li>
+         <li *ngIf="currentPageLab == '1'">
+            <a (click)="currentPageLab = '1' "
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white bg-blue-500 dark:hover:bg-gray-700">
+               <img src="../../../assets/images/Test.png" width="8%">
+               <span class="flex-1 ml-3 whitespace-nowrap">Requested Tests</span>
+            </a>
+         </li>
+         <li *ngIf="currentPageLab == '1'">
+            <a (click)="currentPageLab = '2'"
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-700 dark:hover:bg-gray-700">
+               <img src="../../../assets/images/DoneTest.png" width="8%">
+               <span class="flex-1 ml-3 whitespace-nowrap">Accomplished Tests</span>
+            </a>
+         </li>
+         <li *ngIf="currentPageLab == '2'">
+            <a (click)="currentPageLab = '2'"
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white bg-blue-500 dark:hover:bg-gray-700">
+               <img src="../../../assets/images/DoneTest.png" width="8%">
+               <span class="flex-1 ml-3 whitespace-nowrap">Accomplished Tests</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+</aside>
+
+<div class="h-full w-full"
+    style="background-image: url('assets/images/LabBackground.png'); background-position: center; background-size: cover;">
+    <div class="p-4 sm:ml-64">
+    <br><br><br><br><br>
+    <div class="flex justify-center items-center relative overflow-x-auto rounded-lg m-8">
+        <table *ngIf="currentPageLab == '1'"
+            class="shadow-2xl rounded-lg w-full text-sm text-left text-gray-500">
+            <thead class="bg-blue-400 text-xs text-white uppercase rounded-lg">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Product name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Color
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Category
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Price
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Apple MacBook Pro 17"
+                    </th>
+                    <td class="px-6 py-4">
+                        Silver
+                    </td>
+                    <td class="px-6 py-4">
+                        Laptop
+                    </td>
+                    <td class="px-6 py-4">
+                        $2999
+                    </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Microsoft Surface Pro
+                    </th>
+                    <td class="px-6 py-4">
+                        White
+                    </td>
+                    <td class="px-6 py-4">
+                        Laptop PC
+                    </td>
+                    <td class="px-6 py-4">
+                        $1999
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Magic Mouse 2
+                    </th>
+                    <td class="px-6 py-4">
+                        Black
+                    </td>
+                    <td class="px-6 py-4">
+                        Accessories
+                    </td>
+                    <td class="px-6 py-4">
+                        $99
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+ 
+    </div>
+</div>
+</div>

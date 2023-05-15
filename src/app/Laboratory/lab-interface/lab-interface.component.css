@@ -1,0 +1,12 @@
+.bglab{
+    background-image: url(../../../assets/images/LabBackground.png);
+}
+.bgcolor{
+    background-color: #585454;
+}
+a{
+    color:aliceblue;
+}
+.icon-display {
+    transform: scale(2);
+ }
