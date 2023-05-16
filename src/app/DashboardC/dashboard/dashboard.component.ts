@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-
+  public list: string[] = ['overview', 'doctors', 'patients']
+  public currentPageDash: string = this.list[0];
 }

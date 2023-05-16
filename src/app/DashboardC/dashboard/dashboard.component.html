@@ -3,9 +3,20 @@
    aria-label="Sidebar">
    <div class="bgcolor h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
       <ul class=" space-y-2 font-medium">
-         <li>
-
-            <a href="#"
+         <li *ngIf="currentPageDash == 'overview'">
+            <a (click)="currentPageDash = this.list[0] "
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white bg-orange-700 dark:hover:bg-gray-700">
+               <svg aria-hidden="true"
+                  class="w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                  <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+               </svg>
+               <span class="ml-3">Overview</span>
+            </a>
+         </li>
+         <li *ngIf="currentPageDash != 'overview'">
+            <a (click)="currentPageDash = this.list[0] "
                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-700 dark:hover:bg-gray-700">
                <svg aria-hidden="true"
                   class="w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -13,11 +24,20 @@
                   <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
                   <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                </svg>
-               <span class="ml-3">Dashboard</span>
+               <span class="ml-3">Overview</span>
             </a>
          </li>
-         <li>
-            <a href="#"
+         <li *ngIf="currentPageDash == 'doctors'">
+            <a (click)="currentPageDash = this.list[1] "
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white bg-orange-700 dark:hover:bg-gray-700">
+               <img style="fill: white;"
+                  class="flex-shrink-0 w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  src="../../assets/images/doctor-icon.svg" alt="Your SVG file">
+               <span class="flex-1 ml-3 whitespace-nowrap">Doctors</span>
+            </a>
+         </li>
+         <li *ngIf="currentPageDash != 'doctors'">
+            <a (click)="currentPageDash = this.list[1] "
                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-700 dark:hover:bg-gray-700">
                <img style="fill: white;"
                   class="flex-shrink-0 w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -25,8 +45,20 @@
                <span class="flex-1 ml-3 whitespace-nowrap">Doctors</span>
             </a>
          </li>
-         <li>
-            <a href="#"
+         <li *ngIf="currentPageDash == 'patients'">
+            <a (click)="currentPageDash = this.list[2] "
+               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white bg-orange-700 dark:hover:bg-gray-700">
+               <svg aria-hidden="true"
+                  class="flex-shrink-0 w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                  </path>
+               </svg>
+               <span class="flex-1 ml-3 whitespace-nowrap">Patients</span>
+            </a>
+         </li>
+         <li *ngIf="currentPageDash != 'patients'">
+            <a (click)="currentPageDash = this.list[2] "
                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-700 dark:hover:bg-gray-700">
                <svg aria-hidden="true"
                   class="flex-shrink-0 w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -56,7 +88,8 @@
 </aside>
 
 <div class="p-4 sm:ml-64">
-   <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14 bg-gray-200">
+   <div *ngIf="currentPageDash == 'overview'"
+      class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14 bg-gray-200">
 
       <div class="text-2xl font-bold">Overview</div><br>
       <div class="grid grid-cols-3 gap-4 mb-4">
@@ -111,15 +144,15 @@
 
                <div routerLink="/totalstuff"
                   class="w-1/4 mx-2 p-4 transition duration-500 ease-in-out transform hover:scale-125 border-2 border-gray-500 flex flex-col items-center shadow-lg justify-center rounded bg-gradient-to-r from-gray-300 to-white p-5">
-                 
-                     <div class=" mt-4"> <mat-icon class="icon-display">local_hospital</mat-icon></div>
-                     <div class="text-2xl ">
-                        <p>90</p>
-                     </div>
-                     <div class="mb-2 text-lg font-bold">
-                        <p>Total_Stuff</p>
-                     </div>
-               
+
+                  <div class=" mt-4"> <mat-icon class="icon-display">local_hospital</mat-icon></div>
+                  <div class="text-2xl ">
+                     <p>90</p>
+                  </div>
+                  <div class="mb-2 text-lg font-bold">
+                     <p>Total_Stuff</p>
+                  </div>
+
                </div>
                <div class="h-20"></div>
                <div routerLink="/treatments"
@@ -132,7 +165,7 @@
                      <p>Treatments</p>
                   </div>
                </div>
-               
+
                <div routerLink="/hospatient"
                   class="w-1/4 mx-2 p-4 transition duration-500 ease-in-out transform hover:scale-125 border-2 border-gray-500 flex flex-col items-center shadow-lg justify-center rounded bg-gradient-to-r from-gray-300 to-white p-5">
                   <div class=" mt-4"> <mat-icon class="icon-display">person_add</mat-icon></div>
@@ -198,4 +231,16 @@
             <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
          </div>
       </div>
+
+
    </div>
+   <div *ngIf="currentPageDash == this.list[1]"
+      class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14 bg-gray-200">
+      DOCTORS
+   </div>
+
+   <div *ngIf="currentPageDash == this.list[2]" 
+   class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14 bg-gray-200">
+      PATIENTS
+   </div>
+</div>

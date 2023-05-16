@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class LabInterfaceComponent {
   public currentPageLab: string = '1';
-
+  public isAdding: boolean = false;
 }

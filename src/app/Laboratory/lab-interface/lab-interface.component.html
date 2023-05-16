@@ -62,10 +62,13 @@
     style="background-image: url('assets/images/LabBackground.png'); background-position: center; background-size: cover;">
     <div class="p-4 sm:ml-64">
     <br><br><br><br><br>
-
+    
+    <div *ngIf="isAdding == true">
+        <app-test-request></app-test-request>
+    </div>
     
     <div class="w-1/3 ml-4">
-        <a routerLink="/addPatient" *ngIf="currentPageLab == '1'">
+        <a (click)="isAdding = true" *ngIf="currentPageLab == '1'">
         <button class="transition duration-500 ease-in-out transform hover:scale-125 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full px-4 py-2 text-white">
             + Request a Test
         </button></a>
