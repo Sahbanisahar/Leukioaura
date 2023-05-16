@@ -7,3 +7,6 @@ a{
 .icon-display {
     transform: scale(2);
  }
+ .tablehead{
+    background-color: gray;;
+}

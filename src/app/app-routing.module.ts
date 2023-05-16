@@ -22,6 +22,8 @@ import { ExtraOptions } from '@angular/router';
 import { TotalStuffComponent } from './total-stuff/total-stuff.component';
 import { TreatmentsComponent } from './treatments/treatments.component';
 import { NewHosPatientComponent } from './new-hos-patient/new-hos-patient.component';
+import { AddconsultationComponent } from './addconsultation/addconsultation.component';
+import { ReleasedPatientsComponent } from './released-patients/released-patients.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -52,6 +54,8 @@ const routes: Routes = [
   {path: 'totalstuff', component: TotalStuffComponent},
   {path: 'treatments', component: TreatmentsComponent},
   {path: 'hospatient', component: NewHosPatientComponent},
+  {path: 'addconsultation', component: AddconsultationComponent},
+  {path: 'releasedPatients', component: ReleasedPatientsComponent},
   
 ];
 

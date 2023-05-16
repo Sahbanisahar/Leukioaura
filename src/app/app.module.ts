@@ -42,6 +42,8 @@ import { ChatComponent } from './chat/chat.component';
 import { TotalStuffComponent } from './total-stuff/total-stuff.component';
 import { TreatmentsComponent } from './treatments/treatments.component';
 import { NewHosPatientComponent } from './new-hos-patient/new-hos-patient.component';
+import { AddconsultationComponent } from './addconsultation/addconsultation.component';
+import { ReleasedPatientsComponent } from './released-patients/released-patients.component';
 
 
 @NgModule({
@@ -79,7 +81,9 @@ import { NewHosPatientComponent } from './new-hos-patient/new-hos-patient.compon
     ChatComponent,
     TotalStuffComponent,
     TreatmentsComponent,
-    NewHosPatientComponent
+    NewHosPatientComponent,
+    AddconsultationComponent,
+    ReleasedPatientsComponent
   ],
   imports: [
     BrowserModule,
