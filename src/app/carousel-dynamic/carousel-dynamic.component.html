@@ -1,10 +1,11 @@
+<br><br>
 <div class="car">
     <div id="default-carousel" class="relative" data-carousel="static">
         <!-- Carousel wrapper -->
-        <div class="imghd  h-full overflow-hidden md:h-56">
+        <div class="imghd h-full overflow-hidden md:h-56">
             <img 
                 src="../../assets/images/carouselDY.png"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                class="absolute w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <div class="flex flex-col items-center">
@@ -61,4 +62,11 @@
                     <p>Features <mat-icon>chevron_right</mat-icon> Discharge Prescriptions<mat-icon>chevron_right</mat-icon>Details</p>
                 </div>
             </div>
+            <div class="flex flex-col items-center">
+                <div *ngIf="router.url === '/patient'" class="headC waviy text-center text-white">
+                    <br>
+                    <p class="font-medium">Patient Interface</p>
+                </div>
+            </div>
         </div>
+        <br><br><br><br><br><br><br><br>

@@ -45,6 +45,14 @@ import { NewHosPatientComponent } from './new-hos-patient/new-hos-patient.compon
 import { AddconsultationComponent } from './addconsultation/addconsultation.component';
 import { ReleasedPatientsComponent } from './released-patients/released-patients.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PatientInterfaceComponent } from './Patient/patient-interface/patient-interface.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { DynamicCalendarComponent } from './dynamic-calendar/dynamic-calendar.component';
+import { MultiChartComponent } from './multi-chart/multi-chart.component';
+import * as CanvasJSAngularChart from '../assets/canvasjs.angular.component';
+import { PieGraphComponent } from './pie-graph/pie-graph.component';
+var CanvasJSChart = CanvasJSAngularChart.CanvasJSChart;
 
 
 @NgModule({
@@ -85,7 +93,12 @@ import { ProfileComponent } from './profile/profile.component';
     NewHosPatientComponent,
     AddconsultationComponent,
     ReleasedPatientsComponent,
-    ProfileComponent
+    ProfileComponent,
+    PatientInterfaceComponent,
+    DynamicCalendarComponent,
+    MultiChartComponent,
+    CanvasJSChart,
+    PieGraphComponent
   ],
   imports: [
     BrowserModule,
@@ -95,7 +108,11 @@ import { ProfileComponent } from './profile/profile.component';
     MatCardModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -103,4 +120,7 @@ import { ProfileComponent } from './profile/profile.component';
     CUSTOM_ELEMENTS_SCHEMA
   ]
 })
-export class AppModule { }
+
+export class AppModule { 
+
+}
