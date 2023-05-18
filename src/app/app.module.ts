@@ -44,6 +44,7 @@ import { TreatmentsComponent } from './treatments/treatments.component';
 import { NewHosPatientComponent } from './new-hos-patient/new-hos-patient.component';
 import { AddconsultationComponent } from './addconsultation/addconsultation.component';
 import { ReleasedPatientsComponent } from './released-patients/released-patients.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -83,7 +84,8 @@ import { ReleasedPatientsComponent } from './released-patients/released-patients
     TreatmentsComponent,
     NewHosPatientComponent,
     AddconsultationComponent,
-    ReleasedPatientsComponent
+    ReleasedPatientsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

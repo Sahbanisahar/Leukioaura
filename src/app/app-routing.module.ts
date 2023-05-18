@@ -24,6 +24,7 @@ import { TreatmentsComponent } from './treatments/treatments.component';
 import { NewHosPatientComponent } from './new-hos-patient/new-hos-patient.component';
 import { AddconsultationComponent } from './addconsultation/addconsultation.component';
 import { ReleasedPatientsComponent } from './released-patients/released-patients.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -56,6 +57,7 @@ const routes: Routes = [
   {path: 'hospatient', component: NewHosPatientComponent},
   {path: 'addconsultation', component: AddconsultationComponent},
   {path: 'releasedPatients', component: ReleasedPatientsComponent},
+  {path: 'profile', component: ProfileComponent},
   
 ];
 
